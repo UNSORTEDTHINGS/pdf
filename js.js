@@ -4,7 +4,7 @@ const { PDFDocument } = PDFLib
   async function fillReplForm() {
     getinput(event);
     //Fetch the PDF with form fields
-    const formPdfBytes = await fetch('http://127.0.0.1:5500/VD040.pdf').then(res => res.arrayBuffer())
+    const formPdfBytes = await fetch('https://raw.githubusercontent.com/UNSORTEDTHINGS/pdf/main/VD040.pdf').then(res => res.arrayBuffer())
     const pdfDoc = await PDFDocument.load(formPdfBytes)
     const options = {method: 'GET', headers: {
 		'X-RapidAPI-Key': '449a86dbf0mshce4a90484a956e8p10f30djsnb21176daef36',
@@ -27,7 +27,7 @@ const { PDFDocument } = PDFLib
   async function fillRegForm() {
     getinput(event);
     //Fetch the PDF with form fields
-    const formPdfBytes = await fetch('http://127.0.0.1:5500/VD119.pdf').then(res => res.arrayBuffer())
+    const formPdfBytes = await fetch('https://raw.githubusercontent.com/UNSORTEDTHINGS/pdf/main/VD119.pdf').then(res => res.arrayBuffer())
     const pdfDoc = await PDFDocument.load(formPdfBytes)
     const options = {method: 'GET', headers: {
 		'X-RapidAPI-Key': '449a86dbf0mshce4a90484a956e8p10f30djsnb21176daef36',
